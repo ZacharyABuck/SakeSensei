@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SakeSensei.Views.MemoryRecorderPage">
+  
+  <ScrollView Orientation="Vertical">
+    <StackLayout VerticalOptions="Start"
+                 HorizontalOptions="Fill">
+      <StackLayout Orientation="Horizontal"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Fill">
+        <Label Text="Sake Name" />
+        <Entry x:Name="sakeName"
+               Placeholder="Enter sake name"
+               Completed="OnEntryCompleted"  />
+      </StackLayout>
+
+      <Entry Text="Brewery Name" />
+      <DatePicker />
+      <Entry Text="Classification" />
+      <Entry Text="Rating" />
+      <Editor Text="Notes" />
+      <Button Text="Save" Clicked="OnSaveButtonClicked"/>
+    </StackLayout>
+  </ScrollView>
+
+</ContentPage>
